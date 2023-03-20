@@ -7,6 +7,7 @@
 
 html, body {
     height: 100%;
+    min-height: 844px;
 }
 
 a {
@@ -146,8 +147,8 @@ a {
     height: 30px;
     border-radius: 50%;
     background: red;
-    top: 0;
-    right: 0;
+    top: 2px;
+    right: 1px;
     font-size: 10px;
     line-height: 30px;
     font-family: 'SF Pro Display', serif;
@@ -235,6 +236,10 @@ a {
 }
 
 @media all and (max-width: 375px) {
+    html, body{
+        min-height: 667px;
+    }
+
     .banner {
         background-size: cover;
         background-position-y: 25%;
