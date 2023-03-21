@@ -20,24 +20,31 @@ export const useLang = (atrTranslate) => {
 
   const allLangs = Object.keys(langs);
 
+  const url = new URL(window.location.href);
+
   function checkLanguage() {
     const langSystem = (navigator.language || navigator.userLanguage).substring(0, 2);
-    if (allLangs.includes(langSystem)) {
-      setURL(langSystem);
-      changeLanguage(langSystem);
+    let langParam = url.searchParams.get('lang')
+    switch (true) {
+      case allLangs.includes(langParam):
+        setURL(langParam)
+        break;
+      case allLangs.includes(langSystem):
+        setURL(langSystem);
+        break;
+      default:
+        setURL('en');
     }
   }
 
   function setURL(lang) {
-    const url = new URL(window.location.href);
-    if (!url.searchParams.has('lang') || url.searchParams.get('lang') !== lang) {
-      if (url.searchParams.get('lang') !== lang) {
-        url.searchParams.set('lang', lang);
-      } else {
-        url.searchParams.append('lang', lang);
-      }
-      history.pushState(null, null, url.href);
+    if (!url.searchParams.has('lang')) {
+      url.searchParams.append('lang', lang);
+    } else {
+      url.searchParams.set('lang', lang)
     }
+    history.pushState(null, null, url.href);
+    changeLanguage(lang);
   }
 
   function setPrice() {
