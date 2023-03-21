@@ -318,6 +318,13 @@ a {
     }
 }
 
+@media all and (min-width: 1000px){
+    .banner{
+        background-size: 40% 100%;
+        background-position: center center;
+    }
+}
+
 /*styles for different languages*/
 
 .content__title[data-lang="es"] {
