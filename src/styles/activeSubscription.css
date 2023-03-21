@@ -1,0 +1,8 @@
+.container-packages__package{
+    transition: all ease 0.5s;
+}
+
+.container-packages__package_active{
+    transform: scale(1.1);
+    opacity: 1;
+}
