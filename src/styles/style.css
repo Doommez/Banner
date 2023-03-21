@@ -314,3 +314,10 @@ a {
         margin-top: 18px;
     }
 }
+
+@media all and (min-width: 1000px){
+    .banner{
+        background-size: 40% 100%;
+        background-position: center center;
+    }
+}
