@@ -1,7 +1,5 @@
 import './index.html';
-import './styles/style.css';
-import './styles/textStyles.css'
-import './styles/activeSubscription.css'
+import './styles/index.css'
 import {useLang} from "./modules/useLang";
 import {chooseSubscription} from "./modules/chooseSubscription";
 

@@ -20,6 +20,14 @@
     font-size: 13px;
 }
 
+.package__alert[data-lang="fr"]{
+    font-size: 12px;
+}
+
+.package__time[data-lang='fr']{
+    font-size: 11px;
+}
+
 .content__title[data-lang="nl"] {
     font-size: 33px;
 }
