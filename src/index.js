@@ -1,5 +1,6 @@
 import './index.html';
-import './style.css';
+import './styles/style.css';
+import './styles/textStyles.css'
 import {useLang} from "./modules/useLang";
 
 window.addEventListener('DOMContentLoaded', function() {

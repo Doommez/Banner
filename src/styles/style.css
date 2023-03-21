@@ -21,7 +21,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: -webkit-image-set(url("assets/background-full/4.webp") 1x, url("assets/background-full/4@2x.webp") 2x, url("assets/background-full/4@3x.webp") 3x) no-repeat;
+    background: -webkit-image-set(url("../assets/background-full/4.webp") 1x, url("../assets/background-full/4@2x.webp") 2x, url("../assets/background-full/4@3x.webp") 3x) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -32,7 +32,7 @@ a {
     justify-content: space-between;
 }
 
-.header__close{
+.header__close {
     position: relative;
 }
 
@@ -121,7 +121,7 @@ a {
 }
 
 .package, .benefit {
-    background: url('assets/shape-1.svg');
+    background: url('../assets/shape-1.svg');
     background-size: 131px 162px;
     width: 131px;
     height: 162px;
@@ -137,7 +137,7 @@ a {
 }
 
 .benefit {
-    background: url('assets/shape-2.svg');
+    background: url('../assets/shape-2.svg');
     background-size: 131px 162px;
 }
 
@@ -236,7 +236,7 @@ a {
 }
 
 @media all and (max-width: 375px) {
-    html, body{
+    html, body {
         min-height: 667px;
     }
 

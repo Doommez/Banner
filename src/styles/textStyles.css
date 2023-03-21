@@ -1,0 +1,37 @@
+/*styles for different languages*/
+
+.content__title[data-lang="es"] {
+    font-size: 32px;
+}
+
+.content__list[data-lang='es'] {
+    margin-left: 40px;
+}
+
+.point__text[data-lang='es'] {
+    font-size: 13px;
+}
+
+.content__title[data-lang="fr"] {
+    font-size: 26px;
+}
+
+.point__text[data-lang='fr'] {
+    font-size: 13px;
+}
+
+.content__title[data-lang="nl"] {
+    font-size: 33px;
+}
+
+.point__text[data-lang='nl'] {
+    font-size: 14px;
+}
+
+.content__title[data-lang="ru"] {
+    font-size: 25px;
+}
+
+.point__text[data-lang='ru'] {
+    font-size: 13px;
+}
