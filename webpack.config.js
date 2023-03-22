@@ -40,7 +40,19 @@ module.exports = {
         test: /\.(sc|sa|c)ss$/i,
         use: [
           devMode ? "style-loader": MiniCssExtractPlugin.loader,
-          "css-loader"
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "postcss-preset-env",
+                  ],
+                ],
+              },
+            },
+          }
         ],
       },
       {
