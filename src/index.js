@@ -1,5 +1,5 @@
 import './index.html';
-import './styles/index.css'
+import './index.css'
 import {useLang} from "./modules/useLang";
 import {chooseSubscription} from "./modules/chooseSubscription";
 
